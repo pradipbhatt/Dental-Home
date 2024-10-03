@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    /* color: aliceblue; */
+}
+
+
+                                                   /* header */
+.navbar{
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top:0px;
+}
+
+.navbar h1{
+    margin-left: 100px;
+}
+
+span{
+    color: red;
+}
+
+.nav-optns{
+    width: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 16px;
+    font-size: large;
+    color: #0000EE;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar i{
+    font-size:x-large;
+    text-align: center;
+    margin-left: 110px;
+    margin-top: 7px;
+   
+}
+                                          /* body */
+.main-img{
+  background-image: url(/images/dental.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.heading{
+  padding: 20px;
+  background-color: pink;
+  background-color: aliceblue;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about{
+    margin-top: 20px;
+    display: flex;
+}
+
+.img1{
+    background-image: url(/images/smile.jpg);
+    height: 360px;
+    width: 500px;
+    background-size: cover;
+    padding: 3px;
+    border: 6px solid aliceblue;
+}
+
+.msg{
+    background-color: aliceblue;
+    padding: 3px;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.about-info{
+    margin: 40px;
+    width: 60%;
+    color: aliceblue;
+ display: flex;
+ flex-direction: column;
+}
+
+.about-info h2{
+    margin-bottom: 30px;
+}
+
+ button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color:rgb(20, 247, 247);
+    width: 20%;
+    margin-top: 16px;
+}
+
+.available{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    margin-left: 9%;
+}
+.services{
+   height: 240px;
+   width: 30%;
+   border: 3px solid red;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   background-size: cover;
+   background-color: aliceblue;
+}
+
+.services img{
+    background-size: cover;
+    height: 200px;
+    width: 92%;
+ padding-left: 14px;
+ /* padding: 10px; */
+}
+
+.services img:hover{
+    transform: scale(1.05);
+}
+
+.services p{
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+  padding: 3px;
+}
+
+.comments{
+    margin-top: 15px;
+    display: flex;
+}
+.cmnt{
+    height: 200px;
+    padding: 10px;
+    width: 33%;
+    margin:10px ;
+    border: 3px solid red;
+    background-color: white;
+}
+
+.cmnt:hover{
+    transform: translateY(-10px);
+}
+
+.cmnt img{
+    background-image: url(/images/extraction.jpg);
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+border-radius: 50%;}
+
+.id{
+ display: flex;
+ font-size: xx-large;
+ font-weight: 600;
+ margin-top: 7px;
+ align-items: center;
+ padding: 7px;
+}
+
+.contact{
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    padding: 20px;
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    border: 3px solid aqua;
+    align-items: center;
+    justify-content: center;
+}
+
+.map{
+    justify-content: flex-end;
+    /* width: 50%; */
+    background-size: cover;
+    border: 3px solid red;
+}
+
+
+input{
+    padding: 10px;
+    width: 90%;
+    margin: 20px;
+}
+
+
+                                           /* footer */
+.footer{
+    margin-top: 20px;
+    background-color:rgb(235, 246, 246);
+    /* background-color: pink; */
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style: none;
+    padding: 4px;
+}
+
+    .container h2{
+        padding: 5px;
+        text-decoration: underline red;
+    }
+
+.container i{
+    font-size: xx-large;
+    margin: 20px;
+}
+/* 
+#socials{
+    display: flex;
+    flex-direction: column;
+} */
