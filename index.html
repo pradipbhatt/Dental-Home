@@ -5,91 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smilee</title>
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <i class="fa-solid fa-bars"></i>
-            <h1> Nepal <span>Dental Home </span></h1>
-            <div class="nav-optns">
-                <a href="#main"> Home </a>
-                <a href="#about"> About </a>
-                <a href="#services"> Services </a>
-                <a href="#review"> Review </a>
-                <a href="#contact"> Contact </a>
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-bars mr-4 text-xl cursor-pointer"></i>
+                <h1 class="text-2xl font-bold">Nepal <span class="font-light">Dental Home</span></h1>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#main" class="hover:text-gray-400">Home</a>
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#services" class="hover:text-gray-400">Services</a>
+                <a href="#review" class="hover:text-gray-400">Review</a>
+                <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
-
-    <main>
-        <div class="main-img" id="main"> </div>
-
+    
+    <main class="container mx-auto p-4">
+        <div class="main-img" id="main"></div>
+    
         <div class="div1" id="about">
-        <div class="heading"> <h2> <span>About</span> US</h2></div>
-
-        <div class="about" >
-        <div class="img1"><div class="msg">Best Services at affordable cost</div></div>
-
-        <div class="about-info">
-        <h2> Why are we Special?</h2>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, dicta, expedita rerum non consequatur distinctio labore aperiam beatae hic earum necessitatibus accusamus harum in! Eum voluptatum dolor pariatur ut animi delectus. Officia minus eos incidunt sed repudiandae labore error eligendi sit, quis, beatae dolores fuga modi vero ex magnam quasi asperiores amet similique molestias cupiditate ipsam tempore doloribus expedita quibusdam? Quasi, iure ratione, aspernatur, inventore excepturi eos magni repellendus adipisci deleniti incidunt consequatur delectus fugit odit nulla vitae? Quis autem dolores libero, sequi tempore ipsa atque a accusantium officiis, sed tempora enim vel? A quam, beatae tenetur facilis, impedit sequi ipsa ex asperiores molestiae fugiat quia fuga aut debitis veritatis inventore placeat. Quo repellat provident doloremque consequatur iste in molestiae, eveniet laudantium tempora tenetur illo rem voluptas, odio ipsam reiciendis optio. Possimus quos adipisci aliquam. Neque cupiditate reprehenderit perferendis, totam illum a repellendus necessitatibus laudantium veniam, ipsum dignissimos deleniti? Nobis sunt voluptatem consequuntur, quaerat eos repellendus, eveniet, esse sed natus amet officia assumenda quasi distinctio minus accusamus iusto omnis? Quisquam nisi explicabo error voluptatibus doloribus commodi quod laboriosam ipsa voluptate!</p>
-
-        <button>Know More</button>
-    </div>
-</div>
-</div>
-
-<div class="heading" id="services"> <h2> Avaiable <span>Services</span> </h2></div>
-
-<div class="available">
-    <div class="services"> <img src="/images/scaling.webp"></img>
-    <p>Scaling</p> </div>
-    <div class="services">  <img src="/images/filling.jpg"></img>
-    <p>Filling & Restoration </p></div>
-    <div class="services">  <img src="/images/extraction.jpg"></img>
-    <p>Extraction</p></div>
-    <div class="services">  <img src="/images/surgery.jpg"></img>
-    <p>Surgery</p></div>
-    <div class="services">  <img src="/images/orthodentic.avif"></img>
-    <p>Orthodontic Treatment </p></div>
-    <div class="services">  <img src="/images/crowning.jpeg">
-    <p>Crown cutting and Sementation </p></img></div>
-    <div class="services"> <img src="/images/implanting.jpeg"></img> 
-    <p>Implanting</p></div>
-</div>
-
-
-<div class="heading" id="review"> <h2> <span>Gossips</span> in Market </h2></div>
-
-<div class="comments">
-    <div class="cmnt"> <div class="id"><img> Neha Joshi</div>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati totam, minima rem recusandae praesentium quidem non, officiis velit quia quasi rerum molestiae corporis et eligendi! Saepe enim pariatur quasi!</div>
-
-    <div class="cmnt"><div class="id"><img> Neha Joshi</div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium iusto veritatis suscipit facilis unde, neque debitis repellat doloribus provident?</div>
-
-    <div class="cmnt"><div class="id"><img> Neha Joshi</div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis necessitatibus esse nobis tempore nam debitis, impedit iusto at officia aspernatur, tempora odio deleniti voluptatum. Ab facilis doloribus et provident!
-</div>
-</div>
-
-<div class="heading" id="contact"> <h2> <span>Contact</span> Us </h2></div>
-   <div class="contact">
-
-    <div class="form">
-     <input placeholder=" Enter Name ">
-        <input placeholder=" Email Address">
-        <input placeholder=" Contact No">
-        <input placeholder=" Write a Message ">
-        <button> Submit</button>
-    </div>
-   <!-- <div class="map"> <img src="map.png"></div> -->
-    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.1203224471546!2d80.17986117525963!3d28.954155469403236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a1ad687512f3cd%3A0x38aebb430b42376e!2sSiddhanath%20Science%20Campus!5e0!3m2!1sen!2snp!4v1719760071219!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-</div>
-
+            <div class="heading mb-4">
+                <h2 class="text-3xl font-bold text-center">
+                    <span class="text-orange-500">About</span> US
+                </h2>
+            </div>
+    
+            <div class="about flex flex-col md:flex-row items-center">
+                <div class="img1 relative w-full md:w-1/2 h-64 md:h-auto">
+                    <div class="msg absolute bottom-0 left-0 bg-white p-2 text-center">Best Services at affordable cost</div>
+                </div>
+    
+                <div class="about-info w-full md:w-1/2 p-4">
+                    <h2 class="text-2xl font-semibold">Why are we Special?</h2>
+                    <p class="mt-2 text-gray-700">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, dicta, expedita rerum non consequatur distinctio labore aperiam beatae hic earum necessitatibus accusamus harum in! Eum voluptatum dolor pariatur ut animi delectus. Officia minus eos incidunt sed repudiandae labore error eligendi sit, quis, beatae dolores fuga modi vero ex magnam quasi asperiores amet similique molestias cupiditate ipsam tempore doloribus expedita quibusdam? Quasi, iure ratione, aspernatur, inventore excepturi eos magni repellendus adipisci deleniti incidunt consequatur delectus fugit odit nulla vitae? Quis autem dolores libero, sequi tempore ipsa atque a accusantium officiis, sed tempora enim vel? A quam, beatae tenetur facilis, impedit sequi ipsa ex asperiores molestiae fugiat quia fuga aut debitis veritatis inventore placeat. Quo repellat provident doloremque consequatur iste in molestiae, eveniet laudantium tempora tenetur illo rem voluptas, odio ipsam reiciendis optio. Possimus quos adipisci aliquam. Neque cupiditate reprehenderit perferendis, totam illum a repellendus necessitatibus laudantium veniam, ipsum dignissimos deleniti? Nobis sunt voluptatem consequuntur, quaerat eos repellendus, eveniet, esse sed natus amet officia assumenda quasi distinctio minus accusamus iusto omnis? Quisquam nisi explicabo error voluptatibus doloribus commodi quod laboriosam ipsa voluptate!
+                    </p>
+    
+                    <button class="mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">Know More</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="heading mt-8 mb-4" id="services">
+            <h2 class="text-3xl font-bold text-center">Available <span class="text-orange-500">Services</span></h2>
+        </div>
+    
+        <div class="available grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="services text-center">
+                <img src="/images/scaling.webp" alt="Scaling" class="w-full h-32 object-cover mb-2">
+                <p>Scaling</p>
+            </div>
+            <div class="services text-center">
+                <img src="/images/filling.jpg" alt="Filling & Restoration" class="w-full h-32 object-cover mb-2">
+                <p>Filling & Restoration</p>
+            </div>
+            <div class="services text-center">
+                <img src="/images/extraction.jpg" alt="Extraction" class="w-full h-32 object-cover mb-2">
+                <p>Extraction</p>
+            </div>
+            <div class="services text-center">
+                <img src="/images/surgery.jpg" alt="Surgery" class="w-full h-32 object-cover mb-2">
+                <p>Surgery</p>
+            </div>
+            <div class="services text-center">
+                <img src="/images/orthodentic.avif" alt="Orthodontic Treatment" class="w-full h-32 object-cover mb-2">
+                <p>Orthodontic Treatment</p>
+            </div>
+            <div class="services text-center">
+                <img src="/images/crowning.jpeg" alt="Crown Cutting and Cementation" class="w-full h-32 object-cover mb-2">
+                <p>Crown Cutting and Cementation</p>
+            </div>
+            <div class="services text-center">
+                <img src="/images/implanting.jpeg" alt="Implanting" class="w-full h-32 object-cover mb-2">
+                <p>Implanting</p>
+            </div>
+        </div>
+        
+        <div class="heading mt-8 mb-4" id="review">
+            <h2 class="text-3xl font-bold text-center"> <span class="text-orange-500">Gossips</span> in Market </h2>
+        </div>
+    
+        <div class="comments space-y-4">
+            <div class="cmnt bg-gray-100 p-4 rounded shadow">
+                <div class="id flex items-center mb-2">
+                    <img src="/path/to/image.jpg" alt="User" class="w-8 h-8 rounded-full mr-2"> Neha Joshi
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam obcaecati totam, minima rem recusandae praesentium quidem non, officiis velit quia quasi rerum molestiae corporis et eligendi! Saepe enim pariatur quasi!
+            </div>
+    
+            <div class="cmnt bg-gray-100 p-4 rounded shadow">
+                <div class="id flex items-center mb-2">
+                    <img src="/path/to/image.jpg" alt="User" class="w-8 h-8 rounded-full mr-2"> Neha Joshi
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium iusto veritatis suscipit facilis unde, neque debitis repellat doloribus provident?
+            </div>
+        </div>
+    
+        <div class="heading mt-8 mb-4" id="contact">
+            <h2 class="text-3xl font-bold text-center"> <span class="text-orange-500">Contact</span> Us </h2>
+        </div>
+        <div class="contact flex flex-col md:flex-row">
+            <div class="form w-full md:w-1/2 p-4">
+                <input placeholder="Enter Name" class="w-full p-2 border rounded mb-2" />
+                <input placeholder="Email Address" class="w-full p-2 border rounded mb-2" />
+                <input placeholder="Contact No" class="w-full p-2 border rounded mb-2" />
+                <input placeholder="Write a Message" class="w-full p-2 border rounded mb-2" />
+                <button class="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">Submit</button>
+            </div>
+            <div class="map w-full md:w-1/2 p-4">
+                <iframe
+                    class="w-full h-64 sm:h-96 md:h-112 lg:h-128"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.1203224471546!2d80.17986117525963!3d28.954155469403236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a1ad687512f3cd%3A0x38aebb430b42376e!2sSiddhanath%20Science%20Campus!5e0!3m2!1sen!2snp!4v1719760071219!5m2!1sen!2snp"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div>
     </main>
-
+    
 
     <footer>
 <div class="footer">
